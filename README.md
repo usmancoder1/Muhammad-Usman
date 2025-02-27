@@ -1,4 +1,4 @@
-![logo](https://github.com/usmanjani12312/Muhammad-Usman/blob/main/IMG-20250227-WA0057.jpg)
+
 <h1 align="center">Hi 👋, I'm Muhammad Usman shahbaz</h1>
 <h3 align="center">A passionate software engineering from Pakistan</h3>
 <img aligin="right"alt="coding"width="400"src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExanlrZHo1eW5nb2p3bTFwcWN0N2tnMWRmOGsyaDh1MjR5eGNhbnAwaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qgQUggAC3Pfv687qPC/giphy.gif">

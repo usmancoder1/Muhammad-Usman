@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+}
+
+.title {
+    background-color: orangered;
+    overflow: hidden;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  .title a {
+    color: white;
+    font-size: 22px;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: left;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-weight: bold;
+  }
+  .title a:hover {
+    background-color: orange;
+    color: rgb(139, 37, 0);
+  }
+  .title a.active {
+    background-color: #04aa6d;
+    color: white;
+  }
+  .search-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 3px 5px;
+    margin-left: auto;
+    /* margin-right: 1px; */
+  }
+  
+  
+  .search-bar {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 13px;
+    width: 300px;
+    background-color: transparent;
+  }
+  
+  .search-button {
+    background-color: #ff8c42;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 19px;
+  }
+  
+  .search-button:hover {
+    background-color: #ffaa00db;
+  }
+  
+  .search-button svg {
+    width: 20px;
+    height: 20px;
+    color: #fff;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-right: 50px;
+  }
+  .search-box::placeholder {
+    color: #999;
+  }
+
+  
+/*-----------panel style-------------------------------------------------------*/
+/*******************************************************************************/
+.panel{
+    height: 40px;
+    background-color: rgb(83, 30, 10);
+     display: flex;
+     color: white;
+     align-items: center;
+     justify-content: space-evenly;
+}
+.panel-opstions p{
+    display: inline;
+    margin-right: 50px;
+}.panel-opstions a{
+    text-decoration: none;
+    color: white;
+}
+.panel-opstions{
+    width: 70%;
+    font-size: 0.85rem;
+}
+.panel-deals a{
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;}
+    /* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+input:focus, textarea:focus {
+    border-color: #5c9df8;
+    outline: none;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    width :20%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+button:hover {
+    background-color: #555;
+     
+
+}
+/* ************************************  footer *********************************/
+.footer{
+    background-color:black;
+     color: white;
+     height: 330px;
+     display: flex;
+    /* justify-content: space-evenly;*/
+     font-size: 0.85rem;
+   width: 100%;
+   padding-left:2px;
+   border-radius: 25px;
+   margin-top: 15px;
+   
+   }.link{
+     
+     display: flex;
+     
+    
+   
+   }
+   
+   .fotlogo{
+     text-align: center;
+    font-size: 45px;
+     color: white;
+     font-size: bold;
+     flex-wrap: wrap;
+   }
+   .fot {
+     padding-top: 42px;
+     
+    
+   }.download-app img{
+     width: 140px;
+     padding-right: 3px;
+     border-color: #ff8c42;
+   
+   }
+   .fot p{
+     padding-top: 17px;
+   }.fot3 a{
+   text-decoration: none;
+   padding-top: 30px;
+   color: white;
+   }.fot3 ul{
+     list-style-type: none;
+     list-style-position:unset;
+     
+   }.fot3 li{
+     padding-top: 10px;
+   }.line hr{
+     height: 1px;
+     margin: 25px 0;
+     background: white;
+   }.fot1{
+     flex-basis: 30%;
+     text-align: center;
+     
+   }.fot2 , .fot3{
+     flex-basis: 12%;
+     text-align: center;
+     
+   }.fot3,.fot1,.fot2{
+     padding-left: 140px;
+     
+   }
+
+/* General styles  of about*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+
+h1 {
+    margin: 0;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-text {
+    flex: 1;
+    padding: 20px;
+    max-width: 600px;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+p {
+    color: #666;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    color: #555;
+}
+
+.about-image {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+

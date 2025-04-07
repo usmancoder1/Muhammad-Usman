@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RGB Gaming Keyboard</title>
+    <!-- Fonts for Logo and Urdu writing  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Gulzar&display=swap" rel="stylesheet">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      /* Header Section*****************************  */
+.title {
+    background-color: orangered;
+    overflow: hidden;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  .title a {
+    color: white;
+    font-size: 22px;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: left;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-weight: bold;
+  }
+  .title a:hover {
+    /* background-color: orange; */
+    color: rgb(83, 30, 10);
+  }
+  .title a.active {
+    color: white;
+  }
+  .search-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 3px 5px;
+    margin-left: auto;
+    /* margin-right: 1px; */
+  }
+  
+  
+  .search-bar {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 13px;
+    width: 300px;
+    background-color: transparent;
+  }
+  
+  .search-button {
+    background-color: #ff8c42;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 19px;
+  }
+  
+  .search-button:hover {
+    background-color: #ffaa00db;
+  }
+  
+  .search-button svg {
+    width: 20px;
+    height: 20px;
+    color: #fff;
+  }
+  
+  .logo {
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+  font-style: normal;
+    /* font-family: jameel; */
+    font-size: 20px;  
+    color: white; 
+    margin-right: 40px;
+  }
+  .search-box::placeholder {
+    color: #999;
+  }
+  /*-----------panel style-------------------------------------------------------*/
+/*******************************************************************************/
+.panel{
+    height: 40px;
+     background-color: rgb(83, 30, 10);
+     display: flex;
+     color: white;
+     align-items: center;
+     justify-content: space-evenly;
+     margin-left: -70px;
+}
+.panel-opstions p{
+    display: inline;
+    margin-right: 50px;
+}.panel-opstions a{
+    text-decoration: none;
+    color: white;
+}
+.panel-opstions{
+    width: 70%;
+    font-size: 0.85rem;
+}
+.panel-deals a{
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+}/************************************************==============================================***************************/
+
+      /* header  end******************************************************************  */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+      .containerOfProductPage { 
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .product-main {
+        width: 100%;
+        max-width:35vw;
+        margin: 0 auto;
+      }
+      
+      .product-card:hover {
+        transform: scale(1.05);
+      }
+      
+      .mainProductPhoto { 
+        width: 100%;
+        height: 60vh;
+        background: url('elec2.webp');
+        background-size: 100% 100%;
+
+      }
+      /* Product Design Section For Main Photo */
+      .product-card {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        margin: 20px 0;
+        transition: transform 0.3s ease;
+      }
+
+      /* Product Detail Section Code for both Main and related photos  */
+      .product-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+        height: 100%;
+      }
+
+      .product-details h2 {
+        margin: 0;
+        font-size: 24px;
+      }
+      .product-details p {
+        color: #777;
+        font-size: 14px;
+        margin-top: 10px;
+      }
+      .product-price {
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 15px;
+      }
+
+      /* Buy button design code  */
+      .buy-btn {
+        background-color: orangered;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        text-decoration: none;
+        margin-top: 15px;
+        display: inline-block;
+      }
+      .buy-btn:hover {
+        background-color: rgb(167, 44, 0);
+      }
+
+      /* Related Products Section  */
+      .related-products {
+        margin-top: 40px;
+        padding: 20px 0;
+        border-top: 2px solid #ddd;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; 
+      }
+
+      .related-products .product-card {
+        display: flex;
+        flex-direction: column;
+        width: 22%;
+        margin-right: 20px;
+        margin-bottom: 20px;
+      }
+      .product-details h4 {
+        font-size: 20px;
+        margin: 10px 0;
+      }
+      .product-image img {
+        width: 100%;
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <span class="logo">🦋 CARTIFY</span>
+        <a href="Home">Home</a>
+        <a href="Products">Products</a>
+        <a href="Contact">Contact</a>
+        <a href="About">About</a>
+        <div class="search-container">
+          <input type="text" class="search-bar" placeholder="Search Products" />
+          <div class="search-container">
+            <button class="search-button">
+               <!-- <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"  
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-search"
+          > -->
+            <!-- <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg> -->
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+    </div>
+    <a href="login.html">Login</a>
+  </div>
+  <div class="panel">
+    <!--First div for all-->
+    <div class="panel-all" style="margin-left: 59px;">
+      <i class="fa-solid fa-bars"></i>
+      ALL
+    </div>
+    <!--second div-->
+    <div class="panel-opstions">
+      <p>
+        <a href="https://youtu.be/yQimoqo0-7g?si=OW_i6s-WHdut-jdL"
+          >Today's Deals</a
+        >
+      </p>
+      <p>
+        <a href="https://youtu.be/yQimoqo0-7g?si=OW_i6s-WHdut-jdL"
+          >Customer Service</a
+        >
+      </p>
+      <p>
+        <a href="https://youtu.be/yQimoqo0-7g?si=OW_i6s-WHdut-jdL"
+          >Registory</a
+        >
+      </p>
+      <p>
+        <a href="https://youtu.be/yQimoqo0-7g?si=OW_i6s-WHdut-jdL"
+          >Gift Cards</a
+        >
+      </p>
+      <p>
+        <a href="https://youtu.be/yQimoqo0-7g?si=OW_i6s-WHdut-jdL">Sell</a>
+      </p>
+    </div>
+    <!--third div panel deals-->
+    <div class="panel-deals">
+      <a href="https://youtu.be/yQimoqo0-7g?si=OW_i6s-WHdut-jdL">
+        Shop deals in Electronics</a
+      >
+    </div>
+  </div>
+    </header>
+    <div class="containerOfProductPage"> 
+      <!-- Section where the Main Product is displayed -->
+
+      <div class="product-main">
+        <div class="product-card">
+          <div class="mainProductPhoto"></div> 
+
+          <div class="product-details">
+            <h2>RGB Gaming Keyboard & Mouse Combo   </h2>
+            <p>
+                7 Colour Wired RGB Mouse and Keyboard Set - USB Wired Pack For PC & Laptop - White & Black
+                RGB Gaming Keyboard & Mouse Combo
+            </p>
+            <div class="product-price">Rs.2000</div>
+            <a href="purchase-page.html" class="buy-btn">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Related Products Section -->
+      <div class="related-products">
+        <!-- First  -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="prod3.webp" alt="Related Product 1" class="f1" /> 
+          </div>
+          <div class="product-details">
+            <h4>High-Powered Neon LED Bluetooth Speaker </h4>
+            <p>Elevate your music experience with the High-Powered Neon LED Bluetooth Speaker! Featuring a sleek design with dynamic RGB neon lighting</p>
+            <div class="product-price">Rs.5000</div>
+            <a href="purchase-page.html" class="buy-btn">Buy Now</a>
+          </div>
+        </div>
+        <!-- Second -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="prod4.jpg" alt="Related Product 2" /> 
+          </div>
+          <div class="product-details">
+            <h4>Ultra-Fast NeonGlow Gaming Laptop </h4>
+            <p>Experience next-level performance with the NeonGlow Gaming Laptop, designed for speed, power, and style.</p>
+            <div class="product-price">Rs.1,00,500</div>
+            <a href="purchase-page.html" class="buy-btn">Buy Now</a>
+          </div>
+        </div>
+        <!-- Third -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="ps5.webp" alt="Related Product 3" /> 
+          </div>
+          <div class="product-details">
+            <h4> Sony PlayStation 5</h4>
+            <p>Sony PlayStation 5, featuring lightning-fast load times, breathtaking 4K graphics, and an ultra-smooth gameplay experience</p>
+            <div class="product-price">Rs.3,00,000</div>
+            <a href="purchase-page.html" class="buy-btn">Buy Now</a>
+          </div>
+        </div>
+        <!-- Fourth -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="dumbell2.webp " alt="Related Product 4" /> 
+          </div>
+          <div class="product-details">
+            <h4>Adjustable Dumbbell Set</h4>
+            <p>Featuring a sleek black and chrome finish, these high-quality dumbbells come with customizable weight plates, allowing you to adjust resistance for different exercises.</p>
+            <div class="product-price">Rs.30,000</div>
+            <a href="purchase-page.html" class="buy-btn">Buy Now</a>
+          </div>
+        </div>
+
+        <!-- End -->
+      </div>
+    </div>
+  </body>
+</html>
